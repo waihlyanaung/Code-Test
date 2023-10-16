@@ -73,7 +73,7 @@ const Home = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center">
       {/* for displaying animate from lottie */}
-      <img src={icon} className="w-[10%]" />
+      <img src={icon} className="sm:w-[10%] w-[45%] " />
       <h1 className="text-3xl font-bold mb-4">Password Generator</h1>
 
       {/* for displaying slider */}
@@ -148,10 +148,11 @@ const Home = () => {
       </button>
       {/* for generating Password */}
       <div className="mt-4">
-        <h2 className="text-xl font-semibold">Your Password:</h2>
+        <h2 className="text-xl font-semibold ml-3 sm:ml-0">Your Password:</h2>
+        
         <input
           type="text"
-          className="text-lg border border-gray-300 p-2 rounded-md"
+          className="text-lg border border-gray-300 p-2 rounded-md sm:ml-0  ml-3  w-[70%]"
           value={password}
           readOnly
         />
@@ -165,9 +166,11 @@ const Home = () => {
         >
           {copied ? "Copied" : "Copy"}
         </button>
+
+
         {/* for displaying "Strong,Medium,Weak,Too Short" with colour */}
         <div
-          className={`text-sm mt-2 ${
+          className={`text-sm ml-3 sm:ml-0 mt-2 ${
             passwordStrength === "Strong"
               ? "text-green-500"
               : passwordStrength === "Medium"
