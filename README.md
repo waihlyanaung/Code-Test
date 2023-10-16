@@ -1,14 +1,27 @@
-# This is a starter template for react projects (JS version) featuring almost everything you need.
+###Password Generator
+This is a simple React application that generates secure passwords based on user preferences. The application allows you to customize the password length and choose whether to include uppercase letters, lowercase letters, numbers, and special characters in the generated password.
 
-1. react project with vite
-2. tailwind
-3. react-icons
-4. react-router-dom
-5. redux-toolkit/redux
-6. folder structure
+###Features
+Generate Password
+The "Generate Password" button creates a random password according to your chosen options. The password length can be adjusted using the slider.
 
-***Feel free to clone it for your projects :)***    
+###Password Strength
+The application evaluates the strength of the generated password based on the selected options and its length. The password strength can be one of the following:
 
-Provided by - [Swam Htet Aung](https://github.com/swamhtetaung8)
+ *Strong
+ *Medium
+ *Weak
+ *Too Short
+ *Copy to Clipboard
+ 
+You can easily copy the generated password to your clipboard by clicking the "Copy" button. A "Copied" indicator will appear briefly to confirm that the password has been copied.
 
-Typescript version here - [See React Typescript starter](https://github.com/swamhtetaung8/react-ts-starter)
+
+Usage
+ 1.Clone the repository.
+ 2.Install the required dependencies using npm or yarn.
+ ####npm install or yarn install
+ 
+ 3.Start the development server.
+ ####npm start or yarn start
+
